@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c857ea9808.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js">
+</script>
+</head>
+<body>
+    <div id="dashboard">
+        <aside id="menu">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="logo.svg" alt="">
+                </div>
+                <div class="brand">
+                    Spiderboard
+                </div>
+            </div>
+            <div class="menu-items">
+                <div class="menu-title">SOCIAL</div>
+                <a href="#" class="menu-item">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                </a>
+                <a href="#" class="menu-item current">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fab fa-youtube"></i>
+                    Youtube
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fab fa-twitch"></i>         
+                    Twitch
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fab fa-discord"></i>                    
+                    Discord
+                </a>
+            </div>
+            <div class="menu-items">
+                <div class="menu-title">MENU</div>
+                <a href="#" class="menu-item">
+                    <i class="far fa-chart-bar"></i>                    
+                    Statistics
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-folder"></i>                    
+                    Documents
+                </a>
+            </div>
+            <div class="menu-items">
+                <div class="menu-title">OTHER</div>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-cog"></i>                    
+                    Settings
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-sign-out-alt"></i>                    
+                    Log Out
+                </a>
+            </div>
+        </aside>
+        <div id="metrics">
+            <div class="social-stat">
+                <div class="stat-item">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <div class="stat">
+                        <div class="stat-number">2,348</div>
+                        <div class="stat-type">Weekly Follower</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <div class="stat">
+                        <div class="stat-number">2,348</div>
+                        <div class="stat-type">Weekly Following</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <div class="stat">
+                        <div class="stat-number">2,348</div>
+                        <div class="stat-type">Weekly Like</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-user-circle fa-3x"></i>
+                    <div class="stat">
+                        <div class="stat-number">2,348</div>
+                        <div class="stat-type">Weekly Comment</div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-info">
+                <div class="general-info">
+                    <div class="info-banner">
+                        <img src="imgs/user-logo.jpg" class="user-img">
+                        <div class="user-name">Nike</div>
+                        <div class="credit-info">
+                            <div class="credit-item">
+                                <div class="credit-title">Post</div>
+                                <div class="credit-num">850</div>
+                            </div>
+                            <div class="credit-item">
+                                <div class="credit-title">Followers</div>
+                                <div class="credit-num">195M</div>
+                            </div>
+                            <div class="credit-item">
+                                <div class="credit-title">Following</div>
+                                <div class="credit-num">137</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-chart">
+                        <div class="chart-items">
+                            <div><a href='#' class="chosen">Followers</a></div>
+                            <div><a href='#'>Following</a></div>
+                            <div><a href='#'>Likes</a></div>
+                            <div><a href='#'>Comments</a></div>
+                        </div>
+                        <div id="myChart"></div>
+                    </div>
+                </div>
+                <div class="featured-pics-grid">
+                    <img src="https://s4.uupload.ir/files/pexels-erik-mclean-7500606_(1)_4u85.jpg" class="featured-pic grid-column-2x grid-row-2x">
+                    <img src="https://s4.uupload.ir/files/pexels-koolshooters-8533153_(1)_m3zz.jpg" class="featured-pic grid-row-2x">
+                    <img src="https://s4.uupload.ir/files/pexels-shottbydani-10606557_(1)_v6q1.jpg" class="featured-pic">
+                    <img src="https://s4.uupload.ir/files/pexels-kyle-karbowski-10822016_(1)_rg5f.jpg" class="featured-pic">
+                    <img src="https://s4.uupload.ir/files/pexels-deybson-mallony-4914807_(1)_6lv6.jpg" class="featured-pic">
+                    <img src="https://s4.uupload.ir/files/pexels-ilyas-chabli-6545641_ax7e.jpg" class="featured-pic">
+                </div>
+            </div>
+        </div>
+        <div id="comments">
+            <div class="comments-title">Comments</div>
+            <div class="comment">
+                <div class="user-info">
+                    <img src="imgs/user1.JPG" alt="">
+                    <div class="name">Jim Halpert</div>
+                </div>
+                <div class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolores quasi debitis et distinctio expedita incidunt commodi ratione mollitia vero.
+                </div>
+            </div>
+            <div class="comment">
+                <div class="user-info">
+                    <img src="imgs/user2.JPG" alt="">
+                    <div class="name">Stanley Hudson</div>
+                </div>
+                <div class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolores quasi debitis et distinctio expedita incidunt commodi ratione mollitia vero.
+                </div>
+            </div>            <div class="comment">
+                <div class="user-info">
+                    <img src="imgs/user3.JPG" alt="">
+                    <div class="name">Michael Scott</div>
+                </div>
+                <div class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolores quasi debitis et distinctio expedita incidunt commodi ratione mollitia vero.
+                </div>
+            </div>            
+            <div class="comment">
+                <div class="user-info">
+                    <img src="imgs/user4.jpg" alt="">
+                    <div class="name">Pam Beesly</div>
+                </div>
+                <div class="content">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia dolores quasi debitis et distinctio expedita incidunt commodi ratione mollitia vero.
+                </div>
+            </div>
+            <a href="#" class="see-all">
+                <div class="text">See All</div>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        google.charts.load('current',{packages:['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            // Set Data
+            var data = google.visualization.arrayToDataTable([
+                ['', ''],
+                ['Jan',7],['Feb',8],['Mar',8],['Apr',9],['May',9],['Jun',9],
+                ['Jul',10],['Aug',11],['Sep',14],['Oct',14],['Nov',15], ['Dec', 10]
+            ]);
+            // Set Options
+            var options = {
+                legend: 'none',
+                vAxis: {
+                    gridlines: {
+                        color: '#eee'
+                    },
+                    textPosition: 'none',
+                    baselineColor: '#fff',
+                    gridlineColor: '#fff'
+                },
+
+            };
+            // Draw Chart
+            var chart = new google.visualization.LineChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+        }
+    </script>
+</body>
+</html>
